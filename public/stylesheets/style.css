@@ -1,8 +1,620 @@
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-Semibold.ttf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-ExtraBold.ttf);
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-Black.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Open Sauce Sans';
+	src: url(/fonts/OpenSauceSans-Light.ttf);
+	font-weight: 300;
+}
+
+
+/*------------ Master ------------*/
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sauce Sans", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+	text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*-------------- Vendor Registration / Login ------------------*/
+
+.vn_login-page {
+  	background: #464D77;
+	min-height: 100vh;  
+}
+
+.vn_reg-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(../../../uploads/2021/12/Vendor-Registration.jpg);
+  left: 0;
+  right: 0;
+  background-attachment: fixed;
+  top: 0;
+  background-position: right;
+}
+
+.vn_reg-box {
+    width: 600px;
+    left: 0;
+    top: 5vh;
+    background: #fff;
+    padding: 8vh 2.8rem 100px;
+    border-radius: 9px;
+    margin-bottom: 5vh;
+    max-width: 95%;
+    margin: 0 0 7vh;
+    position: relative;
+    z-index: 1;
+}
+
+.vn_form-logo {
+  width: 11.7rem;
+  margin-bottom: 2.8rem;
+}
+
+.vn_form-header h1 {
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 0.18rem;
+  font-weight: 500;
+}
+
+.vn_form-header h3 {
+  font-size: 18px;
+  color: #444;
+  font-weight: 100;
+  letter-spacing: -0.2px;
+  padding: 10px 0;
+}
+
+html body div#vn_form input.um-form-field {
+  min-width: 75px;
+  vertical-align: baseline;
+  margin: 0;
+  color: var(--p-text);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 5px 25px !important;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 50px !important;
+  height: 50px !important;
+  text-transform: initial;
+  letter-spacing: initial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  color: var(--p-text);
+  border: 1px solid rgb(186,191,195) !important;
+  background-color: white;
+}
+
+html body div#vn_form input.um-form-field:focus {
+  border: 2px solid #464D77 !important;
+}
+
+html body div#vn_form .um-field-label label {
+  font-weight: 400;
+}
+
+.um-field-label-icon {
+  display: none !important;
+}
+
+.um-field-block {
+  color: #454f5b;
+  font-size: 15px;
+  line-break: normal;
+  padding: 8px 0 0;
+}
+.um-field-block p {
+  margin-bottom: 10px;
+}
+
+div#vn_form p {
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin: 0.4rem 0 0.6rem;
+  color: #454f5b;
+}
+
+.um-row._um_row_1 {
+  border: 0 !important;
+  margin: 0 !important;
+  padding-bottom: 15px !important;
+}
+
+div#um-field-show-passwords-register {
+  padding: 10px 0 0;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+  color: #454f5b;
+}
+
+.um-row._um_row_1 {
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+div#vn_form p {
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin: 0.4rem 0 0.6rem;
+  color: #454f5b;
+}
+
+html body div#vn_form input.um-form-field:focus {
+  border: 2px solid #464D77 !important;
+}
+
+div#um-field-show-passwords-register {
+  padding: 10px 0 0;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+  color: #454f5b;
+}
+
+.um-col-alt .um-center {
+  text-align: left;
+}
+
+html body input#um-submit-btn {
+  color: white;
+  position: relative;
+  background: #464D77 !important;
+  border-width: 0;
+  font-size: 1.1rem;
+  transition-duration: 0s;
+  padding: 1.2rem 2.4rem !important;
+  border: 2px solid #464D77 !important;
+  min-width: auto !important;
+}
+
+.vn_reg-form a {
+  	color: #464D77;
+	font-weight: 600;
+}
+
+input#um-submit-btn:hover {
+  background: #464D77 !important;
+  border: 2px solid #464D77 !important;
+  color: white !important;
+}
+
+.vn_form-after p {
+  font-size: 16px;
+  color: #454f5b;
+}
+
+.vn_form-legal {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+}
+
+.vn_form-legal ul li {
+  display: inline-block;
+  padding-left: 13px;
+  font-size: 14px;
+}
+
+.vnlogin_page p.vn_form-terms {
+  display: none;
+}
+
+.vn_form-row input[type="text"], .vn_form-row input[type="password"], .vn_form-row input[type="email"], .vn_form-row select {
+  min-width: 75px;
+  margin: 0;
+  color: var(--p-text);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: 5px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 50px;
+  height: 50px;
+  text-transform: initial;
+  letter-spacing: initial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  color: var(--p-text);
+  border: 1px solid #babfc3;
+  background-color: #fff;
+}
+
+.vn_form-row select {
+  padding-top: 0;
+}
+
+.vn_form-row label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #444;
+}
+
+.vn_form-row {
+  margin-bottom: 20px;
+}
+
+.vn_form-row .vn_form-col {
+  width: 48%;
+  float: left;
+}
+
+.vn_form-row .vn_form-col:last-child {
+  float: right;
+}
+
+.vn_form-row.vn_disclaimer {
+  margin-top: 30px;
+  padding: 15px 0 2px;
+  border-top: 1px solid #cecece;
+}
+
+.vn-submit input {
+  color: #fff;
+  position: relative;
+  background: #464D77;
+  border-width: 0;
+  font-size: 1.1rem;
+  transition-duration: 0s;
+  padding: 1.2rem 2.4rem;
+  border: 2px solid #464D77;
+  min-width: auto;
+  display: inline;
+  width: auto;
+  -webkit-appearance: none;
+}
+
+.vn_form-row input:focus {
+  border: 2px solid #464D77;
+}
+
+.vn-submit button {
+    color: #fff;
+    position: relative;
+    background: #464D77;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 1.1rem;
+    transition-duration: 0s;
+    padding: 0.6rem 3.4rem;
+    border: 2px solid #464D77;
+    min-width: auto;
+    text-transform: none;
+}
+
+.vn-submit button:hover {
+  background: #464D77;
+  border: 2px solid #464D77;
+  color: #fff;
+  transition: 0.2s linear;
+}
+
+.vn_form-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.shw_pass {
+  float: right;
+  padding: 10px 0 0;
+  font-size: 14px;
+  word-wrap: break-word;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.shw_pass span {
+    color: #464D77;
+    font-size: 12px;
+}
+
+.shw_pass i {
+  padding-right: 5px;
+}
+
+.vn_form-p {
+  margin-top: -8px;
+  margin-bottom: 20px;
+}
+
+.vnreg_page .vn_phone-row:before {
+  content: "+91";
+  display: block;
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  left: 0;
+  height: 40px;
+  top: 32px;
+  z-index: 1;
+  font-size: 17px;
+  line-height: 40px;
+  border-right: 1px solid #babfc3;
+}
+
+.vnreg_page input#vn_phone {
+  position: relative;
+  padding-left: 70px;
+}
+
+.vnreg_page .vn_phone-row, .vnreg_page .vn_gst-row {
+  position: relative;
+}
+
+.vnreg_page .vn_phone-row span.send_otp, .vn_form-otp .verify_otp, .vnreg_page .vn_gst-row span.verify_gst {
+  position: absolute;
+  right: 0;
+  top: 27px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  font-size: 14px;
+  background: #464D77;
+  color: #fff;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+body #vn_form p.otp_message {
+  margin-bottom: 20px;
+  display: none;
+}
+
+div#recaptcha-container {
+  margin: 10px 0;
+  float: right;
+}
+
+.vn_form-otp {
+  margin: -5px 0 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cecece;
+}
+
+body.page-id-4385 .main-page-wrapper {
+  padding-top: 120px;
+}
+
+.vn_form-err {
+  display: block;
+  background: #cf000fa8;
+  width: auto;
+  padding: 0 35px;
+  line-height: 40px;
+  color: #fffffffa;
+  position: relative;
+  margin: 0;
+  display: none;
+}
+
+.vnlogin_page .vn_reg-box {
+  width: 460px;
+  min-width: 460px;
+}
+
+.vn_form-forgot a {
+  line-height: 22px;
+  color: #888;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: none;
+  margin: 0 0 30px;
+  font-size: 15px;
+}
+
+.vn_disclaimer label {
+  display: inline;
+  font-size: 13px;
+}
+
+.vnlogin_page .vn_form-row.vn_disclaimer {
+  padding: 0 0 2px;
+  border-top: 0;
+  margin-top: 0;
+}
+
+button:disabled {
+  cursor: no-drop;
+}
+
+.vn_form-row h3 {
+  margin: 0 0 10px;
+}
+
+.vn_form-row h3.mt-40 {
+  margin-top: 40px;
+}
+
+div#vn_form p.otp_message.err {
+  color: #CF000F;
+  text-transform: capitalize;
+}
+
+div#vn_form p.otp_message.done {
+  color: #002e25;
+  font-weight: 800;
+}
+
+
+/*------------------ Vendor Pending Review -------------------*/
+
+.vn_review-content p {
+  font-size: 18px;
+  color: #444;
+  font-weight: 100;
+  letter-spacing: -.2px;
+  font-family: Karla,Arial,Helvetica,sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+
+    /*-------------- Vendor Registration / Login ------------------*/
+
+    .vn_reg-box {
+        width: 90%;
+        padding: 5vh 20px 11vh;
+        margin: 2vh auto 7vh;
+        min-width: auto !important;
+    }
+
+
+    /*---------------- Vendor Pricing ----------------------------*/
+
+    .vp_title-section {
+        height: auto;
+        background-size: 500%;
+        background-position: right;
+    }
+
+    .vp_pricing-box, .current-pricing-enterprise-wrap, .vp_faq-box {
+        flex-direction: column;
+    }
+
+    .vp_pricing-item {
+        margin: 0 15px 35px;
+    }
+
+    .vp_features {
+        padding: 100px 30px;
+    }
+
+    .current-pricing-enterprise-text h2, .vp_faq-section h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .current-pricing-enterprice-selling-points-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a.primary-button-2021.primary-button-2021--white.primary-button-2021--xl.primary-button-2021--full {
+        line-height: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .current-pricing-enterprice-selling-points-container {
+        margin: 50px 0;
+    }
+
+
+
+    /*----------------------- Footer -----------------------------*/
+
+    .footer-main_bt, .footer-main_social {
+        flex-direction: column;
+    }
+
+    .footer-main_column {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .footer-main_subs {
+        margin: auto;
+    }
+
+    .footer-main_social {
+        margin: 0;
+        align-items: center;
+    }
+
+    .footer-main_sc-column {
+        margin: 0;
+    }
+
+    .footer-main_sc-column {
+        margin: 0 0 45px;
+        text-align: center;
+    }
+
+    .footer-main_sc-column img {
+        height: 32px;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .footer-main_sc-column ul li:last-child {
+        margin: 15px 0 0;
+    }
+
+    .footer-keys li {
+        font-size: 13px;
+    }
+
+    .footer-copyright {
+        line-height: 1.5;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-cp_main, .footer-cp_author {
+        float: none;
+    }
+
+    .footer-cp_author {
+        text-align: center;
+        margin: 20px 0 0;
+    }
 }

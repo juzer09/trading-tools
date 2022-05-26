@@ -1,0 +1,48 @@
+extends header
+
+block content
+    div(class="vn_login-page")
+        .vnlogin_page.container
+            .vn_reg-box
+                .vn_reg-form
+                    .vn_form-logo
+                        a(href='/')
+                            img(src='/images/mini_Logo-LightBG.png' alt='Small Trading ToolsShop' width='250')
+                    .vn_form-header
+                        h1 Log in
+                        h3 to Continue to Small Trading Tools
+                    .vn_form#vn_form
+                        form#vendor-loginForm(action='POST')
+                            .vn_form-row.vn_phone-row
+                                label(for='vn_phone') Phone Number or Email ID
+                                input#vn_phone(type='text' name='vn_phone')
+                            .vn_form-row
+                                label(for='vn_password') Password
+                                input#vn_password(type='password' name='vn_password' required)
+                                .shw_pass(data-show='false')
+                                    i.fa-solid.fa-eye
+                                    span Show Password
+                            .vn_form-row.vn_form-err
+                            .vn_form-row.hidden
+                            .vn_form-row.vn_disclaimer
+                                input#vn_persistance(type='checkbox' name='vn_persistance')
+                                |  
+                                label(for='vn_persistance') Keep me logged in
+                            .vn_form-row.vn-submit
+                                button(type='submit') Login
+                        .vn_form-forgot.text-center
+                            a(href='/forgot-password/') Forget your password?
+                    .vn_form-after
+                        p New to Small Trading Tools? 
+                            a(href='/register') Get Started 
+                    .vn_form-legal
+                        ul
+                            li
+                                a(href='/legal/#vendor-agreement') Vendor Policy
+                            li
+                                a(href='/legal/#Terms-Conditions-FAQ') Terms
+                            li
+                                a(href='/legal/#privacy-policy') Privacy
+            .vhidden.addSpace
+
+include footer.pug
